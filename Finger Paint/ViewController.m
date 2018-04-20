@@ -7,23 +7,33 @@
 //
 
 #import "ViewController.h"
+#import "Canvas.h"
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet Canvas *canvas;
+
 @end
+
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+-(void)viewDidLoad
+{
+     [super viewDidLoad];
+}
+
+- (IBAction)setEraser:(UIButton *)sender
+{
+    [self.canvas changeStrokeColor:self.canvas.backgroundColor];
+    self.canvas.isErasing = YES;
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)setStrokeColor:(UIButton *)sender
+{
+    [self.canvas changeStrokeColor:sender.backgroundColor];
+    self.canvas.isErasing = NO;
 }
-
 
 @end

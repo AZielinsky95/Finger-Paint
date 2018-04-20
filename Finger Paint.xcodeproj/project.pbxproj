@@ -13,6 +13,9 @@
 		CAFBA1D3208A456E00B931B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFBA1D2208A456E00B931B8 /* Assets.xcassets */; };
 		CAFBA1D6208A456E00B931B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFBA1D4208A456E00B931B8 /* LaunchScreen.storyboard */; };
 		CAFBA1D9208A456E00B931B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA1D8208A456E00B931B8 /* main.m */; };
+		CAFBA1E1208A480D00B931B8 /* LineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA1E0208A480D00B931B8 /* LineSegment.m */; };
+		CAFBA1E4208A497000B931B8 /* Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA1E3208A497000B931B8 /* Canvas.m */; };
+		CAFBA1E7208A5D5800B931B8 /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA1E6208A5D5800B931B8 /* Line.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		CAFBA1D5208A456E00B931B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAFBA1D7208A456E00B931B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAFBA1D8208A456E00B931B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAFBA1DF208A480D00B931B8 /* LineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineSegment.h; sourceTree = "<group>"; };
+		CAFBA1E0208A480D00B931B8 /* LineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineSegment.m; sourceTree = "<group>"; };
+		CAFBA1E2208A497000B931B8 /* Canvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
+		CAFBA1E3208A497000B931B8 /* Canvas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Canvas.m; sourceTree = "<group>"; };
+		CAFBA1E5208A5D5800B931B8 /* Line.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		CAFBA1E6208A5D5800B931B8 /* Line.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 		CAFBA1C8208A456D00B931B8 /* Finger Paint */ = {
 			isa = PBXGroup;
 			children = (
+				CAFBA1E2208A497000B931B8 /* Canvas.h */,
+				CAFBA1E3208A497000B931B8 /* Canvas.m */,
+				CAFBA1E5208A5D5800B931B8 /* Line.h */,
+				CAFBA1E6208A5D5800B931B8 /* Line.m */,
+				CAFBA1DF208A480D00B931B8 /* LineSegment.h */,
+				CAFBA1E0208A480D00B931B8 /* LineSegment.m */,
 				CAFBA1C9208A456D00B931B8 /* AppDelegate.h */,
 				CAFBA1CA208A456D00B931B8 /* AppDelegate.m */,
 				CAFBA1CC208A456E00B931B8 /* ViewController.h */,
@@ -143,8 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAFBA1CE208A456E00B931B8 /* ViewController.m in Sources */,
+				CAFBA1E7208A5D5800B931B8 /* Line.m in Sources */,
 				CAFBA1D9208A456E00B931B8 /* main.m in Sources */,
 				CAFBA1CB208A456E00B931B8 /* AppDelegate.m in Sources */,
+				CAFBA1E4208A497000B931B8 /* Canvas.m in Sources */,
+				CAFBA1E1208A480D00B931B8 /* LineSegment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
